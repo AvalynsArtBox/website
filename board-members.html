@@ -1,30 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Board Members – Avalyn’s Art Box</title>
-  <link href="css/styles.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #7CBF7F;
+      --text: #000;
+      --radius: 8px;
+      --transition: 0.3s ease;
+      --max-width: 800px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--green);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 120px;
+    }
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+      margin-bottom: 40px;
+    }
+    main {
+      max-width: var(--max-width);
+      margin: auto;
+    }
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+    .member {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .member img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+    .member h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+    }
+    .member p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    footer p {
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <img src="logo.png" alt="Avalyn’s Art Box Logo" class="logo">
     <h1>Board Members</h1>
   </header>
+
   <main>
-    <section>
-      <h2>Our Leadership</h2>
-      <ul>
-        <li>Erin Pierce – Founder & Lead Developer</li>
-        <li>Madelyn Adams – Secretary</li>
-        <li>Coming Soon – Treasurer</li>
-        <!-- add more as you grow -->
-      </ul>
-    </section>
+    <div class="member-grid">
+      <div class="member">
+        <img src="placeholder.png" alt="Erin Pierce">
+        <h3>Erin Pierce</h3>
+        <p>Founder &amp; Lead Developer</p>
+      </div>
+      <div class="member">
+        <img src="placeholder.png" alt="Madelyn Adams">
+        <h3>Madelyn Adams</h3>
+        <p>Secretary</p>
+      </div>
+      <div class="member">
+        <img src="placeholder.png" alt="Coming Soon">
+        <h3>Coming Soon</h3>
+        <p>Treasurer</p>
+      </div>
+    </div>
   </main>
+
   <footer>
-    <img src="logo.png" alt="Logo" class="footer-logo">
     <p>&copy; 2025 Avalyn’s Art Box. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
