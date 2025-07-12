@@ -20,124 +20,25 @@
       --spacing: 20px;
     }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(180deg, var(--gradient-start), var(--gradient-end));
-      color: var(--text-color);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      align-items: center;
-    }
-    .container {
-      max-width: var(--max-width);
-      width: 100%;
-      padding: var(--spacing);
-      flex: 1;
-    }
-    .header {
-      text-align: center;
-      margin-bottom: var(--spacing);
-    }
-    .header-logos {
-      display: flex;
-      justify-content: center;
-      gap: var(--spacing);
-      margin-bottom: var(--spacing);
-    }
-    .header-logos img {
-      width: 80px;
-      height: auto;
-    }
-    .header-title {
-      font-family: 'Poppins', sans-serif; font-weight: 600;
-      font-size: 2.5rem;
-      margin: 0;
-    }
-    .header-subtitle {
-      font-family: 'Poppins', sans-serif; font-weight: 600;
-      font-size: 1.2rem;
-      margin-top: 5px;
-      color: var(--primary);
-    }
-    .content-section {
-      background: var(--bg-box);
-      border-radius: var(--radius);
-      box-shadow: 0 4px 12px var(--shadow);
-      padding: var(--spacing);
-      margin-bottom: var(--spacing);
-    }
-    .content-section h2 {
-      font-family: 'Poppins', sans-serif; font-weight: 600;
-      font-size: 1.8rem;
-      color: var(--primary);
-      margin-bottom: var(--spacing);
-      position: relative;
-      display: inline-block;
-    }
-    .content-section h2::after {
-      content: '';
-      height: 4px;
-      width: 50px;
-      background: var(--primary);
-      position: absolute;
-      left: 0;
-      bottom: -6px;
-      border-radius: var(--radius);
-    }
-    .content-section p,
-    .content-section li {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: var(--spacing);
-    }
-    .content-section ul {
-      padding-left: var(--spacing);
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: var(--spacing);
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: center;
-    }
-    th {
-      background: var(--primary);
-      color: #fff;
-    }
-    .final-note {
-      font-style: italic;
-      text-align: center;
-      margin-bottom: var(--spacing);
-    }
-    .btn-home {
-      display: block;
-      width: fit-content;
-      margin: 0 auto;
-      padding: 12px 30px;
-      background: var(--primary);
-      color: #fff;
-      border-radius: var(--radius);
-      text-decoration: none;
-      font-weight: 700;
-      transition: background 0.3s ease;
-    }
-    .btn-home:hover {
-      background: var(--accent);
-    }
-    footer {
-      width: 100%;
-      text-align: center;
-      padding: var(--spacing) 0;
-      background: var(--bg-box);
-      color: var(--text-color);
-      font-size: 0.9rem;
-    }
+    body { margin:0; padding:0; font-family:'Montserrat',sans-serif; background:linear-gradient(180deg,var(--gradient-start),var(--gradient-end)); color:var(--text-color); display:flex; flex-direction:column; min-height:100vh; align-items:center; }
+    .container { max-width:var(--max-width); width:100%; padding:var(--spacing); flex:1; }
+    .header { text-align:center; margin-bottom:var(--spacing); }
+    .header-logos { display:flex; justify-content:center; gap:var(--spacing); margin-bottom:var(--spacing); }
+    .header-logos img { width:80px; height:auto; }
+    .header-title { font-family:'Poppins',sans-serif; font-weight:600; font-size:2.5rem; margin:0; }
+    .header-subtitle { font-family:'Poppins',sans-serif; font-weight:600; font-size:1.2rem; margin-top:5px; color:var(--primary); }
+    .content-section { background:var(--bg-box); border-radius:var(--radius); box-shadow:0 4px 12px var(--shadow); padding:var(--spacing); margin-bottom:var(--spacing); }
+    .content-section h2 { font-family:'Poppins',sans-serif; font-weight:600; font-size:1.8rem; color:var(--primary); margin-bottom:var(--spacing); position:relative; display:inline-block; }
+    .content-section h2::after { content:''; height:4px; width:50px; background:var(--primary); position:absolute; left:0; bottom:-6px; border-radius:var(--radius); }
+    .content-section p, .content-section li { font-size:1rem; line-height:1.6; margin-bottom:var(--spacing); }
+    .content-section ul { padding-left:var(--spacing); }
+    .content-section.final-note { text-align:center; }
+    table { width:100%; border-collapse:collapse; margin-bottom:var(--spacing); }
+    th, td { border:1px solid #ddd; padding:12px; text-align:center; }
+    th { background:var(--primary); color:#fff; }
+    .btn-home { display:block; width:fit-content; margin:0 auto; padding:12px 30px; background:var(--primary); color:#fff; border-radius:var(--radius); text-decoration:none; font-weight:700; transition:background 0.3s ease; }
+    .btn-home:hover { background:var(--accent); }
+    footer { width:100%; text-align:center; padding:var(--spacing) 0; background:var(--bg-box); color:var(--text-color); font-size:0.9rem; }
   </style>
 </head>
 <body>
@@ -148,39 +49,42 @@
         <img src="uls-logo.png" alt="ULS Logo">
       </div>
       <h1 class="header-title">Unconditional Love System (ULS)</h1>
-      <div class="header-subtitle">Healing Through Divine Alignment &mdash; Anytime, Anywhere</div>
+      <div class="header-subtitle">Healing Through Divine Alignment — Anytime, Anywhere</div>
     </header>
 
-    <!-- Added What Is section -->
+    <!-- What Is Section -->
     <section class="content-section">
       <h2>What Is the Unconditional Love System?</h2>
-      <p>The Unconditional Love System (ULS) is our flagship digital healing experience &mdash; an interactive, responsive tool designed to meet each user right where they are, no matter their age, background, or belief system.</p>
-      <p>ULS reads a user’s emotional and physiological signals to offer a personalized poetic response &mdash; an uplifting message infused with love and care, like a spiritual embrace.</p>
-      <p>Whether you’re experiencing trauma, grief, stress, or simply seeking deeper inner connection, ULS is designed to provide instant, compassionate support &mdash; 24/7.</p>
+      <p>The Unconditional Love System (ULS) is our flagship digital healing experience — an interactive, responsive tool designed to meet each user right where they are, no matter their age, background, or belief system.</p>
+      <p>ULS reads a user’s emotional and physiological signals to offer a personalized poetic response — an uplifting message infused with love and care, like a spiritual embrace.</p>
+      <p>Whether you’re experiencing trauma, grief, stress, or simply seeking deeper inner connection, ULS is designed to provide instant, compassionate support — 24/7.</p>
     </section>
 
+    <!-- Why It Works -->
     <section class="content-section">
       <h2>Why It Works</h2>
       <ul>
-        <li>Personalized poetic response, like a warm embrace from divine love</li>
-        <li>Musical piece tuned to frequencies supporting your nervous system</li>
-        <li>Chakra alignment check, identifying energy imbalances</li>
-        <li>Resonance-based frequency mapping to restore your inner light</li>
-        <li>Crystal-coded support tapping natural frequencies to balance, protect, and elevate</li>
+        <li>A personalized poetic response, like a warm embrace from the divine</li>
+        <li>Musical piece tuned to your unique frequency to support your nervous system</li>
+        <li>Personalized chakra alignment check, identifying your unique energy imbalances</li>
+        <li>A personalized resonance-based frequency mapping to restore your inner light</li>
+        <li>Unique crystal-coded support tapping your natural frequencies to balance, protect, align, and elevate</li>
+        <li>System uses color psychology to guide emotional alignment through intentional hues</li>
         <li>ULS is always free and accessible, unlike costly clinical bioacoustic devices</li>
       </ul>
     </section>
-    </section>
 
+    <!-- Science -->
     <section class="content-section">
       <h2>The Science Behind the System</h2>
       <p>Rooted in neuroscience, vibrational medicine, and ancient wisdom, ULS combines neuroplasticity, sound therapy, and bio-resonance to help the body heal from within.</p>
       <p>By replacing trauma-based patterns with affirming ones and promoting neuro-regeneration through frequency and intention, ULS fosters long-term emotional resilience.</p>
     </section>
 
+    <!-- Neuroplasticity -->
     <section class="content-section">
       <h2>Neuroplasticity & Emotional Healing</h2>
-      <p>The brain is adaptable. This trait, called neuroplasticity, allows thoughts, beliefs, and emotional experiences to reshape neural pathways over time.</p>
+      <p>The brain is adaptable. Neuroplasticity allows thoughts, beliefs, and emotional experiences to reshape neural pathways over time.</p>
       <ul>
         <li>Replacing trauma-based patterns with affirming ones</li>
         <li>Encouraging neuro-regeneration through frequency and intention</li>
@@ -188,6 +92,7 @@
       </ul>
     </section>
 
+    <!-- Bioacoustical Devices vs. ULS -->
     <section class="content-section">
       <h2>Bioacoustical Devices vs. ULS</h2>
       <table>
@@ -204,53 +109,60 @@
       </table>
     </section>
 
+    <!-- Crystals -->
     <section class="content-section">
       <h2>Crystals & Divine Blueprint</h2>
       <p>From Exodus’ High Priest breastplate to New Jerusalem’s foundations, crystals serve as sacred tools of divine resonance, each imbued with frequency, purpose, and intention.</p>
       <ul>
         <li>Judaism: 12 stones symbolizing divine connection (Exodus 28:21)</li>
         <li>Christianity: Stones, light, and water as transformation symbols</li>
-        <li>Islam: “Allah is the Light of the heavens and the earth” (Qur’an 24:35)</li>
+        <li>Islam: “Allah is the Light of the heavens and the earth” (Qur’an 24:35)</li>
         <li>Sufism: Whirling, chanting, and vibration to awaken the soul</li>
         <li>Hinduism: Chakra alignment of frequency, color, energy</li>
         <li>Buddhism: Mantras and silence for spiritual transcendence</li>
         <li>Chinese Healing: Qi flows balanced by acupuncture and breath</li>
         <li>Japanese Practices: Ki energy cultivated via Reiki and mindfulness</li>
-        <li>Native American: Crystals and elements for grounding</li>
+        <li>Native American Practices: Crystals and elements for grounding</li>
         <li>Coptic & Ethiopian Christianity: Healing through Psalmic chants</li>
         <li>Rastafarianism: Sound and scripture as healing chants</li>
         <li>Messianic Judaism: Unity of light, vibration, and prophecy</li>
       </ul>
     </section>
 
+    <!-- Color Psychology -->
     <section class="content-section">
       <h2>Color Psychology & Emotional Alignment</h2>
-      <p>Colors are not merely visual—they are vibrational frequencies that resonate with our emotions, memories, and energetic centers. In the Unconditional Love System, color is used intentionally to guide the user’s emotional state toward harmony and healing.</p>
+      <p>Colors are vibrational frequencies that resonate with emotions and energetic centers. ULS uses color intentionally to guide harmony and healing.</p>
       <ul>
-        <li>Red ignites strength, courage, and grounding.</li>
-        <li>Orange inspires creativity, joy, and connection.</li>
-        <li>Yellow stimulates clarity, confidence, and empowerment.</li>
-        <li>Green soothes the heart and encourages balance and compassion.</li>
-        <li>Blue invites calmness, expression, and truth.</li>
-        <li>Indigo opens intuition and inner wisdom.</li>
-        <li>Violet lifts consciousness and aligns with spiritual insight.</li>
+        <li>Red ignites strength, courage, and grounding</li>
+        <li>Orange inspires creativity, joy, and connection</li>
+        <li>Yellow stimulates clarity, confidence, and empowerment</li>
+        <li>Green soothes the heart and encourages balance and compassion</li>
+        <li>Blue invites calmness, expression, and truth</li>
+        <li>Indigo opens intuition and inner wisdom</li>
+        <li>Violet lifts consciousness and aligns with spiritual insight</li>
       </ul>
       <p>Each color within ULS is selected to align with specific emotional needs and chakra points. The intentional use of color deepens the user’s emotional experience, creating a safe and sacred visual space where the heart feels understood. The result is not just visual beauty, but an immersive energetic restoration that connects the mind, body, and spirit through light and intention.</p>
     </section>
 
+    <!-- Sacred Scriptures -->
     <section class="content-section">
-      <h2>Sacred Scriptures & Global Wisdom</h2></h2>
-      <p>“The stones shall be with the names of the children of Israel... each one with its name, according to the twelve tribes.” — Exodus 28:21</p>
-      <p>“Ye are all the children of light... we are not of the night, nor of darkness.” — 1 Thessalonians 5:5</p>
-      <p>“And the light shineth in darkness; and the darkness comprehended it not.” — John 1:5</p>
-      <p>“Allah is the Light of the heavens and the earth.” — Qur’an 24:35</p>
-      <p>“When light of knowledge flows from all parts of the body... a state of goodness.” — Bhagavad Gita 14:11</p>
-      <p>“By effort, vigilance, discipline... no flood can overwhelm.” — Dhammapada 25</p>
-      <p>“The light of the Creator is concealed in all creation... waiting to be revealed.” — Zohar (Kabbalah)</p>
-      <p>“Can you tune your breath until it is perfectly soft?... new-born child?” — Tao Te Ching 10</p>
+      <h2>Sacred Scriptures & Global Wisdom</h2>
+      <p>“The stones shall be with the names of the children of Israel... each one with its name, according to the twelve tribes.” — Exodus 28:21</p>
+      <p>“Therefore hold up your light, that it may shine unto the world. Behold, I am the light which ye shall hold up, that which ye have seen me do.” — 3 Nephi 18:24</p>
+      <p>“Ye are all the children of light, and the children of the day: we are not of the night, nor of darkness.” — 1 Thessalonians 5:5</p>
+      <p>“And the light shineth in darkness; and the darkness comprehended it not.” — John 1:5</p>
+      <p>“Allah is the Light of the heavens and the earth.” — Qur’an 24:35</p>
+      <p>“When light of knowledge flows from all parts of the body, it is said to be a state of goodness.” — Bhagavad Gita 14:11</p>
+      <p>“By effort, vigilance, discipline, and self-mastery, let the wise one make for himself an island which no flood can overwhelm.” — Dhammapada 25</p>
+      <p>“The light of the Creator is concealed in all creation, waiting to be revealed.” — Zohar (Kabbalah)</p>
+      <p>“Can you tune your breath until it is perfectly soft? Can you become like a new-born child?” — Tao Te Ching 10</p>
+      <p>“He is the light and the life of the world: yea, a light that is endless, that can never be darkened; yea, and also a life which is endless.” — Mosiah 16:9</p>
+      <p>“And now, my son, I have told you this that ye may learn wisdom, that ye may learn of me that there is no other way or means whereby man can be saved, only in and through Christ. Behold, he is the life and the light of the world. Behold, he is the word of truth and righteousness.” — Alma 38:39</p>
     </section>
 
-    <section class="final-note">
+    <!-- Final Note -->
+    <section class="content-section final-note">
       <p>The Unconditional Love System doesn’t diagnose or replace faith — it supports it.</p>
       <p>It brings neuroplasticity and divine frequency into sacred conversation with body, mind, and soul.</p>
       <p>You are a masterpiece in motion — ULS is here to remind you of that truth.</p>
@@ -259,7 +171,7 @@
     <a href="index.html" class="btn-home">Return Home</a>
   </div>
   <footer>
-    <p>&copy; 2025 Avalyn’s Art Box. All rights reserved.</p>
+    <p>© 2025 Avalyn’s Art Box. All rights reserved.</p>
   </footer>
 </body>
 </html>
