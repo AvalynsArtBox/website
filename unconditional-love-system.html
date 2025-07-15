@@ -20,27 +20,135 @@
       --spacing: 20px;
     }
     * { box-sizing: border-box; }
-    body { margin:0; padding:0; font-family:'Montserrat',sans-serif; background:linear-gradient(180deg,var(--gradient-start),var(--gradient-end)); color:var(--text-color); display:flex; flex-direction:column; min-height:100vh; align-items:center; }
-    .container { max-width:var(--max-width); width:100%; padding:var(--spacing); flex:1; }
-    .header { text-align:center; margin-bottom:var(--spacing); }
-    .header-logos { display:flex; justify-content:center; margin-bottom:var(--spacing); }
-    .header-logos img { width:80px; height:auto; }
-    .header-title { font-family:'Poppins',sans-serif; font-weight:600; font-size:2.5rem; margin:0; }
-    .header-subtitle { font-family:'Poppins',sans-serif; font-weight:600; font-size:1.2rem; margin-top:5px; color:var(--primary); }
-    .content-section { background:var(--bg-box); border-radius:var(--radius); box-shadow:0 4px 12px var(--shadow); padding:var(--spacing); margin-bottom:var(--spacing); }
-    .content-section h2 { font-family:'Poppins',sans-serif; font-weight:600; font-size:1.8rem; color:var(--primary); margin-bottom:var(--spacing); position:relative; display:inline-block; }
-    .content-section h2::after { content:''; height:4px; width:50px; background:var(--primary); position:absolute; left:0; bottom:-6px; border-radius:var(--radius); }
-    .content-section p, .content-section li { font-size:1rem; line-height:1.6; margin-bottom:var(--spacing); }
-    .content-section ul { padding-left:var(--spacing); }
-    .content-section.final-note { text-align:center; }
-    table { width:100%; border-collapse:collapse; margin-bottom:var(--spacing); }
-    th, td { border:1px solid #ddd; padding:12px; text-align:center; }
-    th { background:var(--primary); color:#fff; }
-    .btn-home { display:block; width:fit-content; margin:var(--spacing) auto; padding:12px 30px; background:var(--primary); color:#fff; border-radius:var(--radius); text-decoration:none; font-weight:700; transition:background 0.3s ease; }
-    .btn-home:hover { background:var(--accent); }
-    footer { width:100%; text-align:center; padding:var(--spacing) 0; background:var(--bg-box); color:var(--text-color); font-size:0.9rem; }
-    .footer-logos { display:flex; justify-content:center; gap:var(--spacing); margin-bottom:var(--spacing); }
-    .footer-logos img { width:80px; height:auto; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(180deg, var(--gradient-start), var(--gradient-end));
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+    }
+    .container {
+      max-width: var(--max-width);
+      width: 100%;
+      padding: var(--spacing);
+      flex: 1;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: var(--spacing);
+    }
+    .header-logos {
+      display: flex;
+      justify-content: center;
+      margin-bottom: var(--spacing);
+    }
+    .header-logos img {
+      width: 200px;
+      height: auto;
+    }
+    .header-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .header-subtitle {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-top: 5px;
+      color: var(--primary);
+    }
+    .content-section {
+      background: var(--bg-box);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px var(--shadow);
+      padding: var(--spacing);
+      margin-bottom: var(--spacing);
+    }
+    .content-section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: var(--spacing);
+      position: relative;
+      display: inline-block;
+    }
+    .content-section h2::after {
+      content: '';
+      height: 4px;
+      width: 50px;
+      background: var(--primary);
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      border-radius: var(--radius);
+    }
+    .content-section p,
+    .content-section li {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: var(--spacing);
+    }
+    .content-section ul {
+      padding-left: var(--spacing);
+    }
+    .content-section.final-note {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: var(--spacing);
+    }
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary {
+      display: block;
+      width: fit-content;
+      margin: var(--spacing) auto;
+      padding: 12px 30px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 0.3s ease;
+    }
+    .btn-primary:hover {
+      background: var(--accent);
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: var(--spacing) 0;
+      background: var(--bg-box);
+      color: var(--text-color);
+      font-size: 0.9rem;
+    }
+    .footer-logos {
+      display: flex;
+      justify-content: center;
+      gap: var(--spacing);
+      margin-bottom: var(--spacing);
+    }
+    .footer-logos img {
+      width: 150px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -60,6 +168,8 @@
       <p>ULS reads a user’s emotional and physiological signals to offer a personalized poetic response — an uplifting message infused with love and care, like a spiritual embrace.</p>
       <p>Whether you’re experiencing trauma, grief, stress, or simply seeking deeper inner connection, ULS is designed to provide instant, compassionate support — 24/7.</p>
     </section>
+    <!-- Join Waitlist Button -->
+    <a href="waitlist.html" class="btn-primary">Join The Waitlist</a>
 
     <!-- Why It Works -->
     <section class="content-section">
@@ -169,8 +279,9 @@
       <p>You are a masterpiece in motion — ULS is here to remind you of that truth.</p>
     </section>
 
-    <a href="index.html" class="btn-home">Return Home</a>
+    <a href="index.html" class="btn-primary">Return Home</a>
   </div>
+
   <footer>
     <div class="footer-logos">
       <img src="logo.png" alt="Avalyn’s Art Box Logo">
