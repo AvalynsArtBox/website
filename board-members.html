@@ -9,9 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
     :root {
+      --red: #ED6E66;
+      --orange: #F3A75D;
+      --yellow: #FBD46D;
       --green: #7CBF7F;
-      --purple: #A27FC2;
       --blue: #5A87D1;
+      --purple: #A27FC2;
       --text: #000;
       --radius: 8px;
       --transition: 0.3s ease;
@@ -47,19 +50,19 @@
     }
     .member {
       background: linear-gradient(
-        to right,
-        #FFCCCC, /* light red */
-        #FFE5CC, /* light orange */
-        #FFFFCC, /* light yellow */
-        #CCFFCC, /* light green */
-        #CCE5FF, /* light blue */
-        #E5CCFF, /* light indigo */
-        #FFCCFF  /* light violet */
+        90deg,
+        var(--red),
+        var(--orange),
+        var(--yellow),
+        var(--green),
+        var(--blue),
+        var(--purple)
       );
+      filter: brightness(1.1);
       border-radius: var(--radius);
       padding: 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      color: #000;
+      color: #fff;
     }
     .member h3 {
       font-family: 'Montserrat', sans-serif;
